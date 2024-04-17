@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Header */
+
+.header {
+  background-color: rgba(245, 245, 245, 1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  line-height: 80px;
+}
+.header-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header-border {
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(217, 217, 217, 1);
+}
+
+/* Home */
+
+.wrapper {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.flash-sale,
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 55%;
+}
+
+.topic {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+  overflow: scroll;
+  height: 100%;
+}
+
+.men,
+.women {
+  border-radius: 20px;
+  color: white;
+  opacity: 0px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.men {
+  background: rgba(43, 217, 175, 1);
+}
+
+.women {
+  background: rgba(255, 94, 132, 1);
+}
+
+.category {
+  .men,
+  .women {
+    cursor: pointer;
+    min-width: 300px;
+  }
+}
+
+/* Product */
+
+.product {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 auto;
+  width: 256px;
+  margin-bottom: 10px;
+}
+.product-title {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 15px 0 15px;
+  height: 100%;
+}
+.product-img {
+  height: 100px;
+  width: 90px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: rgba(14, 66, 253, 1);
+  padding-top: 10px;
+}
+
+.product-des {
+  font-size: 10px;
+  color: rgba(14, 14, 14, 1);
+  font-weight: 400;
+  padding: 0 15px 10px;
+}
+
+/* Category */
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Loading, PageNotFound */
+
+.common-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
